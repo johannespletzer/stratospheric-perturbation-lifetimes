@@ -1,4 +1,4 @@
-# Stratospheric perturbation lifetime
+# Stratospheric perturbation lifetimes
 In high-speed aircraft scenarios the aircraft emit at stratospheric altitudes. In the stratosphere emitted trace gases are transported and chemically converted throughout the middle atmosphere. The resulting perturbation lifetimes are a measure of transport from the altitude of emission to the troposphere. Few processes exist in the middle atmosphere, that remove emitted trace gases and other perturbed trace gases. Examples are dehydration and denitrification in polar stratospheric clouds. Hence, most perturbed trace gases are transported to the troposphere and eventually removed by sedimentation and other processes in the troposphere. 
 
 # Applications
