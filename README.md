@@ -7,6 +7,9 @@ This repository provides code for the following applications
 - To estimate perturbation lifetimes using interpolation and extrapolation at all stratospheric altitudes
 - To calculate a correction factor s. s is used to speed up model simulations with stratospheric aircraft perturbations.
 
+# Limitations
+The input is based on perturbation lifetimes from Grewe & Stenke (2008) and Pletzer et al (2022, under review). The perturbation lifetimes come with the assumption, that perturbations have very low lifetimes at tropospheric altitudes and are removed very fast compared to stratospheric altitudes. 
+
 # Python environment requirements
 The software requires various functions from the following python modules:
 
