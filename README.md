@@ -1,6 +1,6 @@
 # Stratospheric Perturbation Lifetimes
 
-This repository provides a compact workflow to estimate stratospheric perturbation lifetimes of water vapour (`tau`) and derive a model speed-up factor (`s`) for high-altitude aircraft emission studies. The timeline diagram shows how emissions are scaled with factor `s` in year 1 and then reset to baseline in later years, while preserving the intended perturbation response in model simulation results
+This repository provides a compact workflow to estimate stratospheric perturbation lifetimes of water vapour (`tau`) and derive a model speed-up factor (`s`) for high-altitude aircraft emission studies. The timeline diagram shows how emissions are scaled with factor `s` in year 1 and then reset to baseline in later years, while preserving the intended perturbation response in general circulation model simulation results
 
 ![Open speed-up timeline PDF](./figures/speed-up_timeline.png)
 
