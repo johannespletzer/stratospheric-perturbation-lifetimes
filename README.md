@@ -63,5 +63,7 @@ The timeline diagram shows how emissions are scaled with factor `s` in year 1 an
 ## References
 
 - Grewe, V., and Stenke, A. (2008): Source of lower stratospheric water vapor trend and its impact on climate.
-- Pletzer et al. (2022, under review): Perturbation lifetime estimates used for upper-level reference points.
+- Pletzer, Johannes and Grewe, Volker (2024): "Sensitivities of atmospheric composition and climate to altitude and latitude of hypersonic aircraft emissions". DOI: https://doi.org/10.5194/acp-24-1743-2024
 - Pletzer, Johannes (2024): *Dissertation: The climate impact of hypersonic transport*, Figure 3.10. DOI: https://doi.org/10.4233/uuid:39acca9a-53ba-4b9c-b9c0-b6c99f552e25
+
+
