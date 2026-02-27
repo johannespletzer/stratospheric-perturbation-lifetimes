@@ -1,20 +1,52 @@
-# Stratospheric perturbation lifetimes
-In high-speed aircraft scenarios the aircraft emit at stratospheric altitudes. In the stratosphere emitted trace gases are transported and chemically converted throughout the middle atmosphere. The resulting perturbation lifetimes are a measure of transport from the altitude of emission to the troposphere. Few processes exist in the middle atmosphere, that remove emitted trace gases and other perturbed trace gases. Examples are dehydration and denitrification in polar stratospheric clouds. Hence, most perturbed trace gases are transported to the troposphere and eventually removed by sedimentation and other processes in the troposphere. 
+# Stratospheric Perturbation Lifetimes
 
-# Applications
-This repository provides code for the following applications
-- To calculate perturbation lifetimes
-- To estimate perturbation lifetimes using interpolation and extrapolation at all stratospheric altitudes
-- To calculate a correction factor s. s is used to speed up model simulations with stratospheric aircraft perturbations.
+This repository provides a compact workflow to estimate stratospheric perturbation lifetimes of water vapour (`tau`) and derive a model speed-up factor (`s`) for high-altitude aircraft emission studies. The timeline diagram shows how emissions are scaled with factor `s` in year 1 and then reset to baseline in later years, while preserving the intended perturbation response in model simulation results
 
-# Limitations
-The input is based on perturbation lifetimes from Grewe & Stenke (2008) and Pletzer et al (2022, under review). The perturbation lifetimes come with the assumption, that perturbations have very low lifetimes at tropospheric altitudes and are removed very fast compared to stratospheric altitudes. 
+![Open speed-up timeline PDF](./figures/speed-up_timeline.png)
 
-# Python environment requirements
-The software requires various functions from the following python modules:
+## What This Repository Does
 
-- numpy
-- scipy
-- matplotlib
+- Computes perturbation lifetime of water vapour (`tau`) from published reference points.
+- Estimates `tau` across stratospheric altitudes with interpolation and extrapolation.
+- Computes correction factor `s` for first-year accelerated perturbation experiments.
 
-Install the required packages with `pip install numpy scipy matplotlib`.
+## Repository Contents
+
+- `calculate-factor-s_and_tau-values.ipynb`: Derivation of `s`, lifetime estimation workflow, and a plotting example.
+- `figures/speed-up_timeline.pdf`: Timeline figure that illustrates the first-year speed-up method in model simulations.
+
+## Scientific Context
+
+In high-speed aircraft scenarios, emissions are injected in the stratosphere. Emitted trace gases are transported and chemically transformed through the middle atmosphere before most perturbations are transferred to the troposphere, where removal processes are generally faster.
+
+Perturbation lifetime of water vapour (`tau`) is used here as an effective transport/removal timescale from emission altitude toward tropospheric removal.
+
+## Quickstart
+
+1. Install dependencies:
+
+```bash
+pip install numpy scipy matplotlib jupyterlab
+```
+
+2. Open the notebook:
+
+```bash
+jupyter lab calculate-factor-s_and_tau-values.ipynb
+```
+
+3. Run cells top-to-bottom to reproduce the interpolation, figure, and `s` values.
+
+## Limitations
+
+- Input lifetimes are based on a small number of altitude points.
+- The `s ~= tau + 0.5` approximation is most reliable for `tau` values in the range used in the notebook.
+- Scenario-specific chemistry and altitude-distributed emissions can require more detailed treatment.
+
+## References
+
+- Grewe, V., and Stenke, A. (2008): Source of lower stratospheric water vapor trend and its impact on climate.
+- Pletzer, Johannes and Grewe, Volker (2024): "Sensitivities of atmospheric composition and climate to altitude and latitude of hypersonic aircraft emissions". DOI: https://doi.org/10.5194/acp-24-1743-2024
+- Pletzer, Johannes (2024): *Dissertation: The climate impact of hypersonic transport*, Figure 3.10. DOI: https://doi.org/10.4233/uuid:39acca9a-53ba-4b9c-b9c0-b6c99f552e25
+
+
