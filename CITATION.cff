@@ -1,0 +1,27 @@
+# YAML 1.2
+---
+authors:
+  - given-names: Johannes
+    family-names: Pletzer
+    affiliation: 'DLR, Germany'
+    orcid: 'https://orcid.org/0000-0003-3210-3496'
+title: stratospheric-perturbation-lifetimes
+message: >-
+  If you use this software, please cite it using the
+  metadata consistent with CITATION.cff.
+type: software
+abstract: >-
+  This repository provides a compact workflow to estimate stratospheric 
+  perturbation lifetimes of water vapour and derive a model speed-up factor 
+  for high-altitude aircraft emission studies. The method preserves the 
+  perturbation response in general circulation model simulation results.
+repository-code: 'https://github.com/johannespletzer/stratospheric-perturbation-lifetimes'
+keywords:
+  - supersonic
+  - hypersonic
+  - aircraft
+  - emission
+  - stratosphere
+license: Apache-2.0
+version: '2.1'
+cff-version: 1.2.0
